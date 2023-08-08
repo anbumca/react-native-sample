@@ -24,7 +24,7 @@ export type MapCalloutProps = ViewProps & {
    * Callback that is called when the user presses on the callout
    *
    * @platform iOS: Apple Maps only
-   * @platform Android: Supported
+   * @platform Android: Supported 
    */
   onPress?: (event: CalloutPressEvent) => void;
 
