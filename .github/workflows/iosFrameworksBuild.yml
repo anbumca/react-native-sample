@@ -1,7 +1,17 @@
 name: iOS frameworks build
 
+# Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
 jobs:
   build-ios-frameworks:
@@ -34,7 +44,7 @@ jobs:
         run: yarn pod-install
 
       - name: Write Config.xcconfig
-        run: echo MAPS_API_KEY=your_api_key_here >> example/ios/Config.xcconfig
+        run: echo MAPS_API_KEY=client=gme-lorealsa&amp;channel=ACD_WE_DE_LRP_PR_larocheposay.de >> example/ios/Config.xcconfig
 
       - name: Build iOS
         run: xcodebuild -workspace example/ios/rnmshowcase.xcworkspace -scheme rnmshowcase -configuration Debug -sdk iphonesimulator
