@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: yarn --cwd example --frozen-lockfile
 
+      - name: Install pods dependency
+        run: pod repo update
+
       - name: Install pods
         run: yarn pod-install
 
