@@ -40,6 +40,9 @@ jobs:
       - name: Install pods dependency
         run: pod repo update
 
+      - name: Install Cocoapods
+        run: gem install cocoapods
+
       - name: Install Gem dependencies
         run: gem install bundler:2.4.10
 
@@ -51,6 +54,12 @@ jobs:
 
       - name: Write Config.xcconfig
         run: echo MAPS_API_KEY=AIzaSyAKnnWFftBUzoQivzhRnEmZhg6FZ3gSlp4 >> example/ios/Config.xcconfig
+
+      - name: Build clean project
+        run: |
+          cd ios
+          xcodebuild clean -project rnmshowcase.xcodeproj -scheme rnmshowcase
+          xcodebuild build -project rnmshowcase.xcodeproj -scheme rnmshowcase
 
       - name: Build iOS
         run: xcodebuild -workspace example/ios/rnmshowcase.xcworkspace -scheme rnmshowcase -configuration Debug -sdk iphonesimulator
