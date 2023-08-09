@@ -57,7 +57,6 @@ jobs:
 
       - name: Build clean project
         run: |
-          cd ios
           xcodebuild clean -workspace example/ios/rnmshowcase.xcworkspace -scheme rnmshowcase
           xcodebuild build -workspace example/ios/rnmshowcase.xcworkspace -scheme rnmshowcase
 
