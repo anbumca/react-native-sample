@@ -58,8 +58,8 @@ jobs:
       - name: Build clean project
         run: |
           cd ios
-          xcodebuild clean -project example/ios/rnmshowcase.xcodeproj -scheme rnmshowcase
-          xcodebuild build -project example/ios/rnmshowcase.xcodeproj -scheme rnmshowcase
+          xcodebuild clean -workspace example/ios/rnmshowcase.xcodeproj -scheme rnmshowcase
+          xcodebuild build -workspace example/ios/rnmshowcase.xcodeproj -scheme rnmshowcase
 
       - name: Build iOS
         run: xcodebuild -workspace example/ios/rnmshowcase.xcworkspace -scheme rnmshowcase -configuration Debug -sdk iphonesimulator
