@@ -40,6 +40,12 @@ jobs:
       - name: Install pods dependency
         run: pod repo update
 
+      - name: Install Gem dependencies
+        run: gem install bundler:2.4.10
+
+      - name: Install package dependencies
+        run: npm run bootstrap
+
       - name: Install pods
         run: yarn pod-install
 
