@@ -267,8 +267,6 @@ PODS:
     - Google-Maps-iOS-Utils (= 4.1.0)
     - GoogleMaps (= 7.4.0)
     - React-Core
-  - react-native-maps (0.0.0):
-    - React-Core
   - React-perflogger (0.70.9)
   - React-RCTActionSheet (0.70.9):
     - React-Core/RCTActionSheetHeaders (= 0.70.9)
@@ -362,8 +360,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-google-maps (from `../../`)
-  - react-native-maps (from `../..`)
+  - react-native-google-maps (from `../..`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -431,8 +428,6 @@ EXTERNAL SOURCES:
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-google-maps:
-    :path: "../../"
-  react-native-maps:
     :path: "../.."
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
@@ -493,7 +488,6 @@ SPEC CHECKSUMS:
   React-jsinspector: d76d32327f21d4f40dcf696231fdbbca60de4711
   React-logger: 1b3522f1e05c6360e93df3607a016c39e30a7351
   react-native-google-maps: ee3ad79c32fda4f29fe9949e70e259bb31d7f849
-  react-native-maps: 30d24060fb0abe9998d31a4cf37421ff14c59e25
   React-perflogger: cce000b5caa4bcecbb29ee9cfdb47f26202d2599
   React-RCTActionSheet: ba29f52a82d970e2aba5804490ecaea587c7a751
   React-RCTAnimation: 36efe35933875c9aeea612f7d2c0394fa22552c1
@@ -508,6 +502,6 @@ SPEC CHECKSUMS:
   ReactCommon: 153bd73ed963731a8e3e7f03a747b353fed7363e
   Yoga: dc109b79db907f0f589fc423e991b09ec42d2295
 
-PODFILE CHECKSUM: 1d755277e5648e128501c8fe0a40074bd2f373b1
+PODFILE CHECKSUM: 725a9932a43bc448111e507c14d4f7d6d1bb3fe5
 
 COCOAPODS: 1.12.1
